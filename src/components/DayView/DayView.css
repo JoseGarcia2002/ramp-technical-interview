@@ -1,0 +1,59 @@
+.dayview-container {
+    display: flex;
+    width: 100vw;
+    flex-direction: column;
+}
+
+.header-items {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.todays-date {
+    margin: auto;
+}
+
+.event-columns {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    position: relative;
+    overflow-y: auto;
+
+}
+
+.hour-column {
+    width: 80px;
+    display: flex;
+    flex-direction: column;
+}
+
+.hour-block {
+    line-height: 4rem;
+    height: 4rem
+}
+
+.time-grid {
+    display: grid;
+    position: absolute;
+    grid-template-rows: repeat(24, 4rem);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.time-slot {
+    height: 4rem;
+    box-sizing: border-box;
+    border-top: 1px solid black;
+}
+
+.event {
+    position: absolute;
+    background-color: cadetblue;
+    color: white;
+    width: 100%;
+    left: 80px
+}
